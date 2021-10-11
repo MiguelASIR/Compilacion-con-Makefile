@@ -1,32 +1,26 @@
-h1. COMPILAR APACHE2_2.4.48
+# COMPILAR APACHE2_2.4.48
 
-h2. Descargar httpd-2.4.48 de Debian
-`wget http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.48.orig.tar.gz´
-h2. Paquete apr y apr-utils necesarios para la instalacion
+## Descargar httpd-2.4.48 de Debian
+`wget http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.48.orig.tar.gz`
+
+## Paquete apr y apr-utils necesarios para la instalacion
 <pre>
 wget http://apache.mesi.com.ar/apr/apr-1.4.6.tar.gz 
 wget http://apache.mesi.com.ar/apr/apr-util-1.4.1.tar.gz 
 </pre>
 Se coloca dentro de la carpeta *"httpd-2.4.48/srclib"* (que resulta cuando de descomprimir el archivo httpd-2.4.48.orig.tar.gz)
 
-h1. Para instalar PCRE
+## Para instalar PCRE
 
-<pre>
-wget http://sourceforge.net/projects/pcre/files/pcre/8.21/pcre-8.21.tar.gz
-</pre>
+`wget http://sourceforge.net/projects/pcre/files/pcre/8.21/pcre-8.21.tar.gz`
+
 y luego se compila usando el comando:
-<pre>
-./configure --with-included-apr --with-pcre
-</pre>
+`./configure --with-included-apr --with-pcre`
 
-h1.Creamos el makefile
+## Creamos el makefile
 
-<pre>
-make
-</pre>
+`make`
 
-h1. Instalamos
+## Instalamos
 
-<pre>
-make install
-</pre>
+`make install`
