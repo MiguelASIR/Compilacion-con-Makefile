@@ -1,4 +1,4 @@
-#COMPILAR APACHE2_2.4.48
+h1. COMPILAR APACHE2_2.4.48
 ##Descargar httpd-2.4.48 de Debian
 `wget http://deb.debian.org/debian/pool/main/a/apache2/apache2_2.4.48.orig.tar.gz´
 ##Paquete apr y apr-utils necesarios para la instalacion
